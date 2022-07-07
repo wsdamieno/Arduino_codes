@@ -106,13 +106,14 @@ void loop() {
   LoRa.beginPacket();
   LoRa.print(counter);
 
+  // Write in the EEPROM to save the sent information
   EEPROM.write(eeprom_write, counter); //
-    EEPROM.write(eeprom_write + 1, t); //
-    EEPROM.write(eeprom_write + 2, h); //
-    EEPROM.write(eeprom_write + 3, temperature); //
-    EEPROM.write(eeprom_write + 4, moisture_yl_percent); //
-    EEPROM.write(eeprom_write + 5, capacitive_percent); //
-    EEPROM.write(eeprom_write + 6, moisture_percent); //
+  EEPROM.write(eeprom_write + 1, t); //
+  EEPROM.write(eeprom_write + 2, h); //
+  EEPROM.write(eeprom_write + 3, temperature); //
+  EEPROM.write(eeprom_write + 4, moisture_yl_percent); //
+  EEPROM.write(eeprom_write + 5, capacitive_percent); //
+  EEPROM.write(eeprom_write + 6, moisture_percent); //
   }
   LoRa.endPacket();
 
