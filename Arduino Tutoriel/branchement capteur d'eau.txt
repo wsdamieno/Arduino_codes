@@ -1,0 +1,4 @@
+Branchement capteur niveau d'eau: 
+S --> Analog Pin (A0)
++ --> Alimentation (5V)
+- --> Terre (Gnd)

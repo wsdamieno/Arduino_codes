@@ -1,0 +1,3 @@
+branchement buzzer 
++ --> Alimentation (5V, 3.3V)
+- --> Analog Pin (~10)
